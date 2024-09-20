@@ -1,0 +1,45 @@
+{
+    "name": "msstylelint",
+    "version": "0.1.0",
+    "description": "A command-line linter for Microsoft Style Guide compliance in Markdown files",
+    "main": "src/index.js",
+    "type": "module",
+    "bin": {
+        "msstylelint": "src/index.js"
+    },
+    "scripts": {
+        "test": "mocha",
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "markdown",
+        "linter",
+        "microsoft",
+        "style-guide"
+    ],
+    "author": "Bruno Skvorc",
+    "license": "MIT",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "commander": "^8.3.0",
+        "glob": "^8.1.0",
+        "remark": "^15.0.1",
+        "remark-lint": "^10.0.0",
+        "remark-parse": "^11.0.0",
+        "remark-stringify": "^11.0.0",
+        "retext": "^9.0.0",
+        "retext-english": "^5.0.0",
+        "retext-passive": "^5.0.0",
+        "unified": "^11.0.5"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.10.0",
+        "chai": "^4.5.0",
+        "eslint": "^9.10.0",
+        "globals": "^15.9.0",
+        "mocha": "^10.7.3"
+    },
+    "directories": {
+        "test": "test"
+    }
+}
